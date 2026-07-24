@@ -1,0 +1,10 @@
+! ============================================================
+! Device: SW2 — Branch Switch
+! Role: User-PC connectivity
+! ============================================================
+
+hostname SW2
+
+! SW2 is a simple access switch
+! User-PC connects to Fa0/1 — no VLAN config needed
+! All ports default to VLAN 1
