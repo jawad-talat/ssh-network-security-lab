@@ -1,0 +1,20 @@
+! ============================================================
+! Device: SW1 — HQ Switch
+! Role: VLAN segmentation, trunking to R1
+! ============================================================
+
+hostname SW1
+
+! Admin-PC port — VLAN 20
+interface FastEthernet0/1
+ switchport mode access
+ switchport access vlan 20
+
+! Trunk toward R1
+interface FastEthernet0/2
+ switchport mode trunk
+
+vlan 10
+ name Users
+vlan 20
+ name Management
